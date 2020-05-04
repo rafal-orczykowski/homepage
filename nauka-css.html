@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="text-center">
+      <nav>
+        <a href="nauka-html.html">nauka HTML</a>
+        <a href="index.html">strona domowa</a>
+        <a href="nauka-css.html">nauka CSS</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <header>
+          <h1 class="title">Nauka CSS</h1>
+        </header>
+      </div>
+      <header>
+        <img src="przykladowy-obrazek-css.png" alt="obrazek praca domowa 2" />
+      </header>
+      <section>
+        <h2 class="secondary-heading">Sposoby stylowania</h2>
+        <article>
+          <h3 class="article-heading">Informacje II tygodnia</h3>
+          <p>
+            Style umieszczane są w sekcji &lt;head>&lt;/head>
+          </p>
+          <p>
+            Tag {atrubut: wartość;} - stylowanie za pomocą obiektów. Odnosi się
+            do wszystkich elementów o tym samym tagu.
+          </p>
+        </article>
+        <article>
+          <h3 class="article-heading">Informacje III tygodnia</h3>
+
+          <p>
+            &lt;tag style="atrybut:wartość">treść&lt;/tag> - Inline style. Styl
+            znajduje się w tagu razem z atrybutem i wartością w pliku html.
+            Odnosi się do pojedynczego przypadku.
+          </p>
+          <p>
+            &lt;tag class="name">treść&lt;/tag> - Nadawanie klasy. W pliku CSS
+            można w ten sposób nadać atrybuty każdemu znacznikowi posiadającemu
+            daną klasę. 'Kotwicą' dla klasy w pliku css jest '.' - .name
+            {atrybut:wartość;}
+          </p>
+          <p>
+            &lt;tag id="name">treść&lt;/tag> - Nadawanie id. W pliku CSS można w
+            ten sposób nadać atrybuty znacznikowi posiadającemu dane id.
+            'Kotwicą' dla id w pliku css jest '#' - #name {atrybut:wartość;}.
+            Jedno id powinno być przypisane tylko jednemu znacznikowi.
+          </p>
+          <p>
+            <strong>
+              Nazwy klas oraz id zapisujemy kebab-casem.
+            </strong>
+          </p>
+          <p>
+            Do wyszukiwania elementów w css można używać selektorów np. article
+            h3 {atrybut:wartość;}. Zostanie wyszukany h3 znajdujący się w
+            article. Element ścieżki nie musi być bezpośrednim 'rodzicem'
+            znacznika do którego się odnosimy.
+          </p>
+          <p>
+            Należy pamiętać o Specyficzności CSS. Kolejność zczytywania wartości
+            jest następująca: important!, style, Id, class, element. NIE
+            ZAGNIEŻDŻAMY!
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h3 class="text-center">website by Rafał Orczykowski</h3>
+    </footer>
+  </body>
+</html>
