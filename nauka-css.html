@@ -7,27 +7,26 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header class="text-center">
-      <nav>
-        <a href="nauka-html.html">nauka HTML</a>
-        <a href="index.html">strona domowa</a>
-        <a href="nauka-css.html">nauka CSS</a>
+    <header class="navigation">
+      <nav class="navigation__content">
+        <a class="navigation__link" href="nauka-html.html">nauka HTML</a>
+        <a class="navigation__link" href="index.html">strona domowa</a>
+        <a class="navigation__link" href="nauka-css.html">nauka CSS</a>
       </nav>
     </header>
 
+    <header class="header">
+      <h1 class="header__tittle">Nauka CSS</h1>
+      <img
+        class="header__image"
+        src="przykladowy-obrazek-css.png"
+        alt="obrazek praca domowa 2"
+      />
+    </header>
+
     <main>
-      <div class="wrapper">
-        <header>
-          <h1 class="title">Nauka CSS</h1>
-        </header>
-      </div>
-      <header>
-        <img src="przykladowy-obrazek-css.png" alt="obrazek praca domowa 2" />
-      </header>
-      <section>
-        <h2 class="secondary-heading">Stylowanie</h2>
-        <article>
-          <h3 class="article-heading">Informacje II tygodnia</h3>
+        <article class="article">
+          <h2 class="article__heading">Informacje II tygodnia</h2>
           <p>
             Style umieszczane są w sekcji &lt;head>&lt;/head>
           </p>
@@ -37,7 +36,7 @@
           </p>
         </article>
         <article>
-          <h3 class="article-heading">Informacje III tygodnia</h3>
+          <h2 class="article__heading">Informacje III tygodnia</h2>
 
           <p>
             &lt;tag style="atrybut:wartość">treść&lt;/tag> - Inline style. Styl
@@ -73,10 +72,9 @@
             ZAGNIEŻDŻAMY!
           </p>
         </article>
-      </section>
     </main>
     <footer>
-      <h3 class="text-center">website by Rafał Orczykowski</h3>
+      <h3 class="footer">site by Rafał Orczykowski</h3>
     </footer>
   </body>
 </html>
