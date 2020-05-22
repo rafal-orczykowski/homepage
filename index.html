@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="navigation">
@@ -17,7 +18,7 @@
 
     <header class="header">
       <h1 class="header__tittle">WTF - sztuka frontendu</h1>
-      <h2 class="article__heading header__tittle--js"></h2>
+      <div class="article__heading-greeting header__tittle--js"></div>
       <img
         class="header__image"
         src="przykladowy-obrazek-domowa.png"
@@ -25,8 +26,8 @@
       />
     </header>
 
-    <main>
-      <section class="article">
+    <main class="main">
+      <article class="article">
         <h2 class="article__heading">Coś o sobie.</h2>
         <p class="article__description">Cześć, mam na imię Rafał i jestem
           <em>strasznie zadowoloy ze swojej pracy</em>. Po narodzinach drugiej
@@ -37,11 +38,12 @@
           <b>najlepszy kurs <a href="https://cotenfrontend.pl">Frontendu</a></b
           >, przez duże F!
           </p>
-      </section>
-    </main>
-    <footer>
-      <p class="footer">site by Rafał Orczykowski</p>
+        </article>
+      </main>
+    <footer class="footer">
+      <p class="footer__text">site by Rafał Orczykowski</p>
     </footer>
+ 
     <script src="main.js"></script>
   </body>
 </html>

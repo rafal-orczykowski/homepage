@@ -24,8 +24,8 @@
       />
     </header>
 
-    <main>
-        <article class="article">
+    <main class= "main">
+        <article class="article__description">
           <h2 class="article__heading">Informacje II tygodnia</h2>
           <p>
             Style umieszczane są w sekcji &lt;head>&lt;/head>
@@ -35,22 +35,22 @@
             do wszystkich elementów o tym samym tagu.
           </p>
         </article>
-        <article>
+        <article class="article__description">
           <h2 class="article__heading">Informacje III tygodnia</h2>
 
           <p>
-            &lt;tag style="atrybut:wartość">treść&lt;/tag> - Inline style. Styl
+            <b>&lt;tag style="atrybut:wartość">treść&lt;/tag></b> - Inline style. Styl
             znajduje się w tagu razem z atrybutem i wartością w pliku html.
             Odnosi się do pojedynczego przypadku.
           </p>
           <p>
-            &lt;tag class="name">treść&lt;/tag> - Nadawanie klasy. W pliku CSS
+            <b>&lt;tag class="name">treść&lt;/tag></b> - Nadawanie klasy. W pliku CSS
             można w ten sposób nadać atrybuty każdemu znacznikowi posiadającemu
             daną klasę. 'Kotwicą' dla klasy w pliku css jest '.' - .name
             {atrybut:wartość;}
           </p>
           <p>
-            &lt;tag id="name">treść&lt;/tag> - Nadawanie id. W pliku CSS można w
+            <b>&lt;tag id="name">treść&lt;/tag></b> - Nadawanie id. W pliku CSS można w
             ten sposób nadać atrybuty znacznikowi posiadającemu dane id.
             'Kotwicą' dla id w pliku css jest '#' - #name {atrybut:wartość;}.
             Jedno id powinno być przypisane tylko jednemu znacznikowi.
@@ -73,8 +73,8 @@
           </p>
         </article>
     </main>
-    <footer>
-      <h3 class="footer">site by Rafał Orczykowski</h3>
+    <footer class="footer">
+      <h3 class="footer__text">site by Rafał Orczykowski</h3>
     </footer>
   </body>
 </html>
