@@ -12,6 +12,11 @@ display:flex;
 flex-direction:column;
 justify-content:flex-start;
 position:relative;
+background: rgb(252,183,255);
+background: linear-gradient(130deg, rgba(252,183,255,1) 0%, rgba(190,255,225,1) 40%, rgba(38,76,113,1) 100%);
+
+
+
 }
 
 .navigation__content {
