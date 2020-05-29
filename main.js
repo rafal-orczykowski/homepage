@@ -8,7 +8,7 @@ const age = 31;
 
 const showMyProperty = (myProperty) => {
   console.log(`mój wiek to ${myProperty}`);
-  myProperty = myProperty * 2
+  myProperty = myProperty * 2;
   return myProperty;
 };
 const year = showMyProperty(age);
@@ -25,18 +25,16 @@ const myAge = secondProperty(age);
 secondProperty(age);
 secondProperty(myAge);
 
+const greeeting = (querySelectorContent, content) => {
+  const element = document.querySelector(querySelectorContent);
+  element.innerHTML = content;
+  console.log(content);
+};
 
-function greeeting(querySelectorContent,content){
-    const element = document.querySelector(querySelectorContent);
-    element.innerHTML = content;
-}
+greeeting(".header__tittle--js", "witaj ");
 
-greeeting('.header__tittle--js', "witaj ")
+const nextGreeting = (name, age) => {
+  console.log(`Cześć mam na imię ${name} i mam ${age}lat`);
+};
 
-
-const nextGreeting = (name,age) => {
-    console.log(`Cześć mam na imię ${name} i mam ${age}lat`);
-}
-
-nextGreeting("Paula",30)
-
+nextGreeting("Paula", 30);
