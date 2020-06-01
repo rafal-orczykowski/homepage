@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style-grid.css" rel="stylesheet" type="text/css" />
     <link href="normalize.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <main class= "main">
     <header class="navigation">
-      <nav class="navigation__content">
-        <a class="navigation__link" href="index.html">strona domowa</a>
-        <a class="navigation__link" href="nauka-html.html">nauka HTML</a>
-        <a class="navigation__link" href="nauka-css.html">nauka CSS</a>
-        <a class="navigation__link" href="nauka-js.html">nauka JS</a>
+      <nav class="navigation__content--grid">
+        <a class="navigation__link--grid" href="index.html">strona domowa</a>
+        <a class="navigation__link--grid" href="nauka-html.html">nauka HTML</a>
+        <a class="navigation__link--grid" href="nauka-css.html">nauka CSS</a>
+        <a class="navigation__link--grid" href="nauka-js.html">nauka JS</a>
       </nav>
     </header>
 
     <header class="header">
-      <h1 class="header__tittle">Nauka CSS</h1>
+      <h1 class="header__tittle">Nauka JS</h1>
       <img
         class="header__image"
         src="przykladowy-obrazek-css.png"
@@ -26,8 +27,8 @@
       />
     </header>
 
-    <main class= "main">
-        <article class="article__description">
+   
+        <article class="article__description1">
           <h2 class="article__heading">Informacje II tygodnia</h2>
           <ul class="article__list">
           <li>
@@ -39,7 +40,7 @@
           </li>
         </ul>
         </article>
-        <article class="article__description">
+        <article class="article__description2">
           <h2 class="article__heading">Informacje III tygodnia</h2>
           <ul class="article__list">
           <li>
@@ -77,9 +78,10 @@
           </li>
         </ul>
         </article>
-    </main>
+    
     <footer class="footer">
       <p class="footer__text">site by Rafał Orczykowski</li>
     </footer>
+</main>
   </body>
 </html>
