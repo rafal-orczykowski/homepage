@@ -120,9 +120,9 @@ html {
     }
 
     .navigation__content--grid{
-    background:lightblue;
-    text-align:left;
-    display:none;
+      background:lightblue;
+      text-align:left;
+      display:none;
     }
 
     .navigation__link--grid {
@@ -142,4 +142,5 @@ html {
       display:block;
     }
 
+  
 }
