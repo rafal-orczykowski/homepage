@@ -1,8 +1,5 @@
-var nameIn = prompt("jak masz na imię?");
-console.log(`cześć ${nameIn}, miło Cię widzieć`);
-
 const heading = document.querySelector(".header__tittle--js");
-heading.innerHTML = `Cześć ${nameIn}, miło Cię widzieć!`;
+heading.innerHTML = `miło Cię widzieć!`;
 const name = "Rafał";
 const age = 31;
 
@@ -38,3 +35,5 @@ const nextGreeting = (name, age) => {
 };
 
 nextGreeting("Paula", 30);
+
+

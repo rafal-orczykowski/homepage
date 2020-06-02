@@ -11,21 +11,24 @@ html {
   display: grid;
   justify-content:center;
   grid-template-areas: "nav nav" "header header" "article1 article2" "footer footer";
-  grid-template-columns: repeat(2, 500px);
+  grid-template-columns: minmax(200px, 500px) minmax(200px, 500px);
   column-gap: 20px;
   row-gap: 20px;
 }
 
 .navigation {
   grid-area: nav;
-  width:1000px;
   display:flex;
+  background:lightblue;
+ min-height:70px;
+ padding:30px;
+  width: 100%;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  text-align:center;
 }
 
 .header {
+  margin:70px 0 0;
   grid-area: header;
   display:flex;
   flex-direction: column;
@@ -33,24 +36,110 @@ html {
 }
 
 .header__image{
- width:100%;
+  width:100%;
 }
 
 .article__description1 {
   grid-area: article1;
-border-style:dotted;
-padding:16px;
-
+  border-style:dotted;
+  padding:15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .article__description2 {
   grid-area: article2;
   border-style:dotted;
-padding:16px;
+  padding:15px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .footer {
   grid-area: footer;
 }
 
+.header__button {
 
+}
+
+.hamburger{
+  display:hidden;
+}
+
+
+
+@media SCREEN and (max-width:600px){
+
+  .main {
+    display: grid;
+    justify-content:center;
+    grid-template-areas: "nav" "header" "article1" "article2" "footer";
+    grid-template-columns: minmax(300px, 1000%);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+    
+    .header {
+      grid-area: header;
+      display:flex;
+      flex-direction: column;
+      font-size: 12px;
+    }
+    
+    .header__image{
+     width:100%;
+    }
+    
+    .article__description1 {
+      grid-area: article1;
+      border-style:dotted;
+      padding:16px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 15px;
+    
+    }
+    
+    .article__description2 {
+      grid-area: article2;
+      border-style:dotted;
+      padding:16px;
+      text-align: center;
+      font-size: 10px;
+      line-height:15px;
+    }
+    .footer {
+      grid-area: footer;
+    }
+
+    .navigation {
+      position: fixed;
+    }
+
+    .navigation__content--grid{
+    background:lightblue;
+    text-align:left;
+    display:none;
+    }
+
+    .navigation__link--grid {
+      color:red;
+      display:block;
+      margin: 0 0 16px;
+    }
+  
+    .hamburger{
+      display:visible;
+      position:absolute;
+      right:16px;
+      top:25px;
+    }
+
+    .navigation--open{
+      display:block;
+    }
+
+}
