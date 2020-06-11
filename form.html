@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="body__form">
+
+  <header class="navigation">
+    <nav class="navigation__content--form navigation__content--js">
+      <a class="navigation__link" href="index.html">strona domowa</a>
+      <a class="navigation__link" href="nauka-html.html">nauka HTML</a>
+      <a class="navigation__link" href="nauka-css.html">nauka CSS</a>
+      <a class="navigation__link" href="nauka-js.html">nauka JS</a>
+      <a class="navigation__link" href="form.html">formularz</a>
+    </nav>
+  </header>
+  
+  <main class="main">
+    <h1 class="form__header">mój formularz</h1>
+    <form class="form">
+      <p>
+        <label for="firstName">your name:</label>
+        <input class="form__input" value="Rafał" id="firstName" name="firstName">
+      </p>
+      <p>
+        <label>your last name:
+          <input class="form__input" placeholder="Enter your last name" id="lastName" name="lastName">
+        </label>
+      </p>
+      <fieldset>
+        <legend>Favourite pokemons</legend>
+        <p>
+          <label>fire pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="firePokemon" name="firePokemon">
+          </label>
+        </p>
+        <p>
+          <label>water pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="waterPokemon" name="waterPokemon">
+          </label>
+        </p>
+        <p>
+          <label>plant pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="plantPokemon" name="plantPokemon">
+          </label>
+        </p>
+        <p>
+          <label>lightning pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="lightningPokemon" name="lightningPokemon">
+          </label>
+        </p>
+        <p>
+          <label>psyhic pokemon:
+            <input class="form__input" placeholder="Enter pokemon name" id="psyhicPokemon" name="psyhicPokemon">
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Best Star Trek series</legend>
+        <p>
+          <label>
+            <input name="stSeries" type="radio" value="original series"> original series
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="stSeries" type="radio" value="voyager series"> voyager series
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="stSeries" type="radio" value="next generation series"> next generation
+          </label>
+        </p>
+
+      </fieldset>
+      <fieldset>
+        <legend>Which manga do you like</legend>
+        <p>
+          <label>
+            <input name="onePiece" type="checkbox" value="onePiece"> OnePiece
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="naruto" type="checkbox" value="naruto"> Naruto
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="bleach" type="checkbox" value="bleach"> Bleach
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="soulEater" type="checkbox" value="soulEater"> Soul Eater
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="hunterXhunter" type="checkbox" value="hunterXhunter"> Hunter X Hunter
+          </label>
+        </p>
+
+      </fieldset>
+    </form>
+
+  </main>
+</body>
+
+</html>
